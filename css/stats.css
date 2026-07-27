@@ -1,0 +1,384 @@
+/* =========================
+   PAGE STYLING
+========================= */
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #eef2f7,
+        #dbe7f5
+    );
+
+    margin: 0;
+
+    padding: 30px;
+    padding-top: 70px;
+    padding-bottom: 45px;
+
+    color: #2c3e50;
+}
+
+/* Dashboard Title */
+
+body::before {
+
+    content: "CRM Analytics Dashboard";
+
+    display: block;
+
+    text-align: center;
+
+    font-size: 2.2rem;
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+}
+
+/* =========================
+   CARD WIDGETS
+========================= */
+
+.app-status-widget,
+.session-status-widget,
+.all-sessions-widget,
+.active-users-widget {
+
+    background: rgba(255,255,255,0.85);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08),
+        0 2px 6px rgba(0,0,0,0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    animation: fadeUp 0.6s ease forwards;
+}
+
+
+/* =========================
+   CARD HOVER EFFECT
+========================= */
+
+.app-status-widget:hover,
+.session-status-widget:hover,
+.all-sessions-widget:hover,
+.active-users-widget:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.12),
+        0 5px 12px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.app-status-widget h3,
+.session-status-widget h3,
+.all-sessions-widget h3,
+.active-users-widget h3 {
+
+    margin-top: 0;
+
+    color: #1f2937;
+
+    font-size: 1.3rem;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid #edf2f7;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   APP STATUS CARD
+========================= */
+
+.app-status-widget {
+
+    border-left: 5px solid #6f42c1;
+}
+
+
+/* =========================
+   ACTIVE USERS CARD
+========================= */
+
+.active-users-widget {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,123,255,0.08),
+            rgba(0,180,216,0.08)
+        );
+
+    border-left: 5px solid #007bff;
+}
+
+.active-users-widget p {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: #0056b3;
+
+    text-align: center;
+}
+
+
+/* =========================
+   CURRENT USER CARD
+========================= */
+
+.session-status-widget {
+
+    position: relative;
+
+    border-left: 5px solid #16a34a;
+
+    animation: userPulse 3s ease-in-out infinite;
+}
+
+
+/* =========================
+   ONLINE INDICATOR
+========================= */
+
+.online-dot {
+
+    display: inline-block;
+
+    width: 10px;
+
+    height: 10px;
+
+    background: #16a34a;
+
+    border-radius: 50%;
+
+    margin-left: 8px;
+
+    box-shadow: 0 0 8px rgba(22,163,74,0.5);
+
+    animation: onlineBlink 2s ease-in-out infinite;
+}
+
+
+/* =========================
+   TABLE SECTION
+========================= */
+
+.all-sessions-widget table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+}
+
+.all-sessions-widget th {
+
+    background:
+        linear-gradient(
+            135deg,
+            #2c3e50,
+            #34495e
+        );
+
+    color: white;
+
+    padding: 14px;
+
+    text-align: left;
+
+    font-weight: 600;
+}
+
+.all-sessions-widget td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ececec;
+}
+
+.all-sessions-widget tr:nth-child(even) {
+
+    background-color: #f8fafc;
+}
+
+.all-sessions-widget tbody tr {
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.all-sessions-widget tbody tr:hover {
+
+    background-color: #edf7ff;
+
+    transform: scale(1.01);
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+p {
+
+    margin: 10px 0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BUTTON AREA
+========================= */
+
+.bottom-section {
+
+    text-align: center;
+
+    margin-top: 35px;
+}
+
+
+/* =========================
+   PAGE LOAD ANIMATION
+========================= */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   CURRENT USER GLOW
+========================= */
+
+@keyframes userPulse {
+
+    0% {
+
+        box-shadow:
+            0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    50% {
+
+        box-shadow:
+            0 8px 25px rgba(22,163,74,0.18),
+            0 0 15px rgba(22,163,74,0.12);
+    }
+
+    100% {
+
+        box-shadow:
+            0 8px 20px rgba(0,0,0,0.08);
+    }
+}
+
+
+/* =========================
+   ONLINE BLINK
+========================= */
+
+@keyframes onlineBlink {
+
+    0% {
+
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+    50% {
+
+        opacity: 0.5;
+
+        transform: scale(1.15);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+    .all-sessions-widget {
+
+        overflow-x: auto;
+    }
+
+    .all-sessions-widget table {
+
+        min-width: 700px;
+    }
+
+    body::before {
+
+        font-size: 1.5rem;
+    }
+}

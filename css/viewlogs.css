@@ -1,0 +1,334 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family:"Segoe UI",sans-serif;
+
+    min-height:100vh;
+
+    padding:40px;
+
+    background:#c1c8d1;
+
+    color:#333;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    width:92%;
+    max-width:1400px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    background:rgb(240, 235, 235);
+
+    border-radius:20px;
+
+    border-top:5px solid #66a190;
+
+    box-shadow:
+        0 10px 25px rgba(44,62,80,0.15);
+
+    overflow:hidden;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h2{
+    text-align:center;
+
+    font-size:32px;
+    font-weight:700;
+
+    margin-bottom:30px;
+
+    color:#2C3E50;
+}
+
+/* =========================
+   TABLE WRAPPER
+========================= */
+
+.table-wrapper{
+    overflow-x:auto;
+    border-radius:15px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table{
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+table th{
+    padding:16px;
+
+    background:linear-gradient(
+        90deg,
+        #2C3E50,
+        #66a190
+    );
+
+    color:white;
+
+    font-size:14px;
+    font-weight:600;
+
+    text-align:center;
+
+    letter-spacing:0.5px;
+}
+
+/* =========================
+   TABLE CELLS
+========================= */
+
+table td{
+    padding:14px;
+
+    text-align:center;
+
+    color:#374151;
+
+    font-size:14px;
+
+    border-bottom:1px solid #e5e7eb;
+}
+
+/* =========================
+   ROW HOVER
+========================= */
+
+table tbody tr{
+    transition:0.3s ease;
+}
+
+table tbody tr:hover{
+    background:#e8f6f2;
+}
+
+/* =========================
+   ACTION BADGES
+========================= */
+
+.create,
+.update,
+.delete{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+    font-weight:600;
+}
+
+/* CREATE */
+
+.create{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+/* UPDATE */
+
+.update{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+/* DELETE */
+
+.delete{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination{
+    margin-top:25px;
+
+    text-align:center;
+}
+
+/* BUTTONS */
+
+.pagination button{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:42px;
+    height:42px;
+
+    margin:4px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2C3E50,
+        #66a190
+    );
+
+    transition:0.3s ease;
+
+    box-shadow:
+        0 4px 10px rgba(44,62,80,0.25);
+}
+
+/* HOVER */
+
+.pagination button:hover{
+
+    background:linear-gradient(
+        135deg,
+        #1f2d3a,
+        #4f8b79
+    );
+
+    transform:translateY(-2px);
+}
+
+/* ACTIVE */
+
+.pagination button.active{
+
+    background:linear-gradient(
+        135deg,
+        #16a34a,
+        #22c55e
+    );
+
+    color:white;
+}
+
+/* DISABLED */
+
+.pagination button:disabled{
+
+    background:#d1d5db;
+
+    color:#6b7280;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+}
+
+/* =========================
+   HOME BUTTON
+========================= */
+
+.home-btn{
+    margin-top:30px;
+
+    text-align:center;
+}
+
+.home-btn a{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        90deg,
+        #2C3E50,
+        #66a190
+    );
+
+    color:white;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:0.3s ease;
+
+    box-shadow:
+        0 5px 15px rgba(44,62,80,0.25);
+}
+
+.home-btn a:hover{
+
+    background:linear-gradient(
+        90deg,
+        #1f2d3a,
+        #4f8b79
+    );
+
+    transform:translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        width:100%;
+        padding:15px;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    table{
+        min-width:900px;
+    }
+}

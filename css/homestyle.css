@@ -1,0 +1,46 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    color: #333;
+}
+
+/* Content Area */
+.content {
+    margin-top: 70px; /* navbar height */
+
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    color: #4503fa;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ba00c0;
+    }
+    to {
+        text-shadow:
+            0 0 10px #3b0099,
+            0 0 20px #fc0202,
+            0 0 30px #1eb300;
+    }
+}

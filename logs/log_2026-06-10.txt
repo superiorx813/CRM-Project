@@ -1,0 +1,288 @@
+
+==================================================
+DateTime : 2026-06-10 10:29:46
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User : admin logged in successfully
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 10:30:04
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : admin logged out from the session
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 10:30:14
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User : admin logged in successfully
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:14:48
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User : admin viewed profile page
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:15:02
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User : admin deleted profile picture 
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:15:02
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User : admin viewed profile page
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:18:10
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin updated profile (Name: king, Role: ui)
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:18:11
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User : admin viewed profile page
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:19:05
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin submitted request ID 8
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:20:04
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin updated the existing request
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:20:20
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin deleted the existing request
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:20:42
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin  
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 11:21:21
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin  
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 12:10:35
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: All Departments
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 12:26:37
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed pdf for customers with search term: moh
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 14:40:05
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin updated the existing request
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 14:42:13
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin deleted the existing request
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 19:47:06
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User : admin logged in successfully
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 19:49:27
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin submitted request ID 7
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 19:50:10
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: Finance
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 19:50:36
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed Requests PDF
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 20:16:17
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: Finance
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 20:17:43
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: Finance
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 20:17:43
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : admin viewed Requests PDF of department:Finance
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 20:18:47
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: Finance
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 20:18:51
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : admin viewed Requests PDF of department:Finance
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 22:21:47
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: All Departments
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 22:22:38
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : admin viewed Requests PDF of department: All Departments
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 22:23:43
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: All Departments
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 22:23:44
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : admin viewed Requests PDF of department: All Departments
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 22:33:43
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : User admin viewed report for viewrequest with department filter: All Departments
+==================================================
+
+
+
+==================================================
+DateTime : 2026-06-10 22:40:28
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : admin viewed Requests PDF of department: All Departments
+==================================================
+
+

@@ -1,0 +1,31 @@
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    width: 100%;
+    height: 35px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg, #2C3E50, #66a190);
+
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+}
+
+/* Optional hover effect */
+.footer:hover {
+    background: linear-gradient(90deg, #243342, #5a9484);
+    transition: 0.3s ease;
+}

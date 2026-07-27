@@ -1,0 +1,204 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Page Not Found</title>
+                <link rel="stylesheet" href="css/onmissingtemplate.css">
+            </head>
+            <body>
+                <div class="error-box">
+                    <h1>Page Not Found</h1>
+                    <p>The requested page does not exist.</p>
+                    <p><a href="views/loginform.cfm">Go to login</a></p>
+                </div>
+            </body>
+            </html>
+        
+</td></td></td></th></th></th></tr></tr></tr></table></table></table></a></abbrev></acronym></address></applet></au></b></banner></big></blink></blockquote></bq></caption></center></cite></code></comment></del></dfn></dir></div></div></dl></em></fig></fn></font></form></frame></frameset></h1></h2></h3></h4></h5></h6></head></i></ins></kbd></listing></map></marquee></menu></multicol></nobr></noframes></noscript></note></ol></p></param></person></plaintext></pre></q></s></samp></script></select></small></strike></strong></sub></sup></table></td></textarea></th></title></tr></tt></u></ul></var></wbr></xmp>
+<style type="text/css">
+.cfdebug
+{
+	color:black; 
+	background-color:white; 
+	font-family:"Times New Roman", Times, serif; 
+	font-size:small
+}
+
+.cfdebuglge
+{
+	color:black; 
+	background-color:white; 
+	font-family:"Times New Roman", Times, serif; 
+	font-size:medium;
+}
+
+a.cfdebuglink {color:blue; background-color:white }
+</style>
+<table class="cfdebug" bgcolor="white">
+<tr>
+	<td>
+
+		<p class="cfdebug"><hr/>
+		<b class="cfdebuglge"><a name="cfdebug_top">Debugging Information</a></b>
+		<table class="cfdebug">
+		<tr>
+			<td class="cfdebug" nowrap>ColdFusion Server Developer</td>
+			<td class="cfdebug">2025,0,0,331385</td>
+		</tr>
+		<tr>
+			<td class="cfdebug" nowrap> Template </td>
+			<td class="cfdebug">/CRM/views/views/loginform.cfm</td>
+		</tr>
+		<tr>
+			<td class="cfdebug" nowrap> Time Stamp </td>
+			<td class="cfdebug">11-Jun-26 11:59 AM</td>
+		</tr>
+		<tr>
+			<td class="cfdebug" nowrap> Locale </td>
+			<td class="cfdebug">English (US)</td>
+		</tr>
+		<tr>
+			<td class="cfdebug" nowrap> User Agent </td>
+			<td class="cfdebug">CFSCHEDULE</td>
+		</tr>
+		<tr>
+			<td class="cfdebug" nowrap> Remote IP </td>
+			<td class="cfdebug">127.0.0.1</td>
+		</tr>
+		<tr>
+			<td class="cfdebug" nowrap> Host Name </td>
+			<td class="cfdebug">127.0.0.1</td>
+		</tr>
+		</table>
+		</p>
+		
+			<style type="text/css">
+            .template
+            {	color: black; 
+            	font-family: "Times New Roman", Times, serif; 
+            	font-weight: normal; }
+            .template_overage
+            {	color: red; 
+            	background-color: white; 
+            	font-family: "Times New Roman", Times, serif; 
+            	font-weight: bold; }
+            </style>
+       		<p class="cfdebug"><hr/><b class="cfdebuglge"><a name="cfdebug_execution">Execution Time</a></b></p>
+            <a name="cfdebug_templates">
+        
+                <table border="1" cellpadding="2" cellspacing="0" class="cfdebug">
+                <tr>
+					<td class="cfdebug" align="center"><b>Total Time</b></td>
+					<td class="cfdebug" align="center"><b>Avg Time</b></td>
+					<td class="cfdebug" align="center"><b>Count</b></td>
+					<td class="cfdebug"><b>Template</b></td>
+				</tr>
+                
+    
+                        <tr>
+							
+    	                        <td align="right" class="cfdebug" nowrap>0 ms</td>
+							
+                            <td align="right" class="cfdebug" nowrap>0 ms</td>
+                            <td align="center" class="cfdebug" nowrap>1</td>
+                            <td align="left" class="cfdebug" nowrap>CFC&#x5b; C&#x3a;&#x2f;ColdFusion2025&#x2f;cfusion&#x2f;wwwroot&#x2f;CRM&#x2f;Application.cfc &#x7c; onMissingTemplate&#x28;&#x2f;CRM&#x2f;views&#x2f;views&#x2f;loginform.cfm&#x29; &#x5d; from C&#x3a;&#x2f;ColdFusion2025&#x2f;cfusion&#x2f;wwwroot&#x2f;CRM&#x2f;Application.cfc</td>
+                        </tr>
+                        
+    
+                        <tr>
+							
+    	                        <td align="right" class="cfdebug" nowrap>0 ms</td>
+							
+                            <td align="right" class="cfdebug" nowrap>0 ms</td>
+                            <td align="center" class="cfdebug" nowrap>1</td>
+                            <td align="left" class="cfdebug" nowrap>CFC&#x5b; C&#x3a;&#x2f;ColdFusion2025&#x2f;cfusion&#x2f;wwwroot&#x2f;CRM&#x2f;Application.cfc &#x7c; onSessionStart&#x28;&#x29; &#x5d; from C&#x3a;&#x2f;ColdFusion2025&#x2f;cfusion&#x2f;wwwroot&#x2f;CRM&#x2f;Application.cfc</td>
+                        </tr>
+                        
+                <tr>
+					<td align="right" class="cfdebug" nowrap><i>5 ms</i></td><td colspan=2>&nbsp;</td>
+                    <td align="left" class="cfdebug"><i>STARTUP, PARSING, COMPILING, LOADING, &amp; SHUTDOWN</i></td>
+				</tr>
+                <tr>
+					<td align="right" class="cfdebug" nowrap><i>5 ms</i></td><td colspan=2>&nbsp;</td>
+                    <td align="left" class="cfdebug"><i>TOTAL EXECUTION TIME</i></td>
+				</tr>
+                </table>
+                <font color="red"><span class="template_overage">red = over 250 ms average execution time</span></font>
+                </a>
+            	
+<p class="cfdebug"><hr/><b class="cfdebuglge"><a name="cfdebug_scopevars">Scope Variables</a></b></p>
+
+
+<pre><b>CGI Variables:</b>
+AUTH_PASSWORD=
+AUTH_TYPE=
+AUTH_USER=
+CERT_COOKIE=
+CERT_FLAGS=
+CERT_ISSUER=
+CERT_KEYSIZE=
+CERT_SECRETKEYSIZE=
+CERT_SERIALNUMBER=
+CERT_SERVER_ISSUER=
+CERT_SERVER_SUBJECT=
+CERT_SUBJECT=
+CF_TEMPLATE_PATH=C:\ColdFusion2025\cfusion\wwwroot\CRM\views\views\loginform.cfm
+CONTENT_LENGTH=
+CONTENT_TYPE=
+CONTEXT_PATH=
+GATEWAY_INTERFACE=
+HTTPS=off
+HTTPS_KEYSIZE=
+HTTPS_SECRETKEYSIZE=
+HTTPS_SERVER_ISSUER=
+HTTPS_SERVER_SUBJECT=
+HTTP_ACCEPT=
+HTTP_ACCEPT_ENCODING=deflate;q=0
+HTTP_ACCEPT_LANGUAGE=
+HTTP_CONNECTION=Keep-Alive
+HTTP_COOKIE=
+HTTP_HOST=localhost:8500
+HTTP_REFERER=
+HTTP_URL=
+HTTP_USER_AGENT=CFSCHEDULE
+LOCAL_ADDR=127.0.0.1
+PATH_INFO=
+PATH_TRANSLATED=C:\ColdFusion2025\cfusion\wwwroot\CRM\views\views\loginform.cfm
+QUERY_STRING=
+REMOTE_ADDR=127.0.0.1
+REMOTE_HOST=127.0.0.1
+REMOTE_USER=
+REQUEST_METHOD=GET
+SCRIPT_NAME=/CRM/views/views/loginform.cfm
+SERVER_NAME=localhost
+SERVER_PORT=8500
+SERVER_PORT_SECURE=0
+SERVER_PROTOCOL=HTTP/1.1
+SERVER_SOFTWARE=
+WEB_SERVER_API=
+</pre>
+
+<pre><b>Cookie Variables:</b>
+CFID=1412
+CFTOKEN=e09225a0dde20f57-15B2956E-FA33-6CDA-C2AFF887A63815CA
+</pre>
+
+<pre><b>Session Variables:</b>
+cfid=1412
+cftoken=e09225a0dde20f57-15B2956E-FA33-6CDA-C2AFF887A63815CA
+isloggedin=false
+lastactivity={ts &apos;2026-06-11 11:59:00&apos;}
+loginattempts=0
+sessionid=CRMAPPLICATION_1412_e09225a0dde20f57-15B2956E-FA33-6CDA-C2AFF887A63815CA
+sessionstarttime={ts &apos;2026-06-11 11:59:00&apos;}
+urltoken=CFID=1412&amp;CFTOKEN=e09225a0dde20f57-15B2956E-FA33-6CDA-C2AFF887A63815CA
+user_id=0
+username=
+</pre>
+
+<font size="-1" class="cfdebug"><i>Debug Rendering Time: 33 ms</i></font><br />
+
+	</td>
+</tr>
+</table>
+
