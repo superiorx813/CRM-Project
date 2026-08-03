@@ -448,3 +448,12 @@ Action   : User : admin logged in successfully
 ==================================================
 
 
+
+==================================================
+DateTime : 2026-08-03 17:19:58
+Username : admin
+IP       : 0:0:0:0:0:0:0:1
+Action   : admin viewed Requests PDF of department: All Departments
+==================================================
+
+
