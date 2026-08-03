@@ -78,7 +78,7 @@
 
         <tr>
 
-            <td>#user_request_id#</td>
+            <td>#request_id#</td>
 
             <td>#Title#</td>
 

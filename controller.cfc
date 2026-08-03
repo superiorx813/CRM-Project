@@ -22,7 +22,7 @@
     action_type = "viewed_profile",
     description = "#session.username# viewed their profile"
 }>
-   <cfinclude template="views/logfile.cfm">
+   <cfinclude template="/CRM/Views/logfile.cfm">
     <cfreturn data>
 </cffunction>
 
@@ -205,7 +205,7 @@
     <cftry>
         <!-- ================= GET LAST REQUEST ID ================= -->
         <cfquery datasource="#application.datasource#" name="getLast">
-            SELECT MAX(user_request_id) AS last_id
+            SELECT MAX(request_id) AS last_id
             FROM requests
             WHERE username =
             <cfqueryparam value="#session.username#" cfsqltype="cf_sql_varchar">
@@ -221,7 +221,7 @@
                 Title,
                 Description,
                 Department,
-                user_request_id
+                request_id
             )
             VALUES (
                 <cfqueryparam value="#session.username#" cfsqltype="cf_sql_varchar">,
@@ -424,7 +424,7 @@
         name="getInfo">
         SELECT
             username,
-            user_request_id
+            request_id
         FROM requests
         WHERE request_id =
         <cfqueryparam
@@ -446,7 +446,7 @@
     <!-- REORDER USER REQUEST IDS -->
     <cfquery datasource="#application.datasource#">
         UPDATE requests
-        SET user_request_id = (@count := @count + 1)
+        SET request_id = (@count := @count + 1)
         WHERE username =
         <cfqueryparam
             value="#getInfo.username#"
