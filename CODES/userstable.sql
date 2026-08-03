@@ -37,3 +37,4 @@ UPDATE users
 SET username = 'mohankorg'
 WHERE user_id = 1;
 select * from users;
+CREATE DATABASE mydb;

@@ -29,3 +29,6 @@ INSERT INTO requests (Title, Description) VALUES
 
 ('Data Migration Activity', 'Legacy application records need migration into the new CRM database schema.');
 SELECT * from requests;
+ALTER TABLE requests
+ADD COLUMN username VARCHAR(100) NOT NULL AFTER request_id,
+ADD COLUMN Department VARCHAR(100) NOT NULL AFTER Description;
