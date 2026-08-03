@@ -17,7 +17,7 @@
     }>
 
     <!-- ================= INCLUDE LOGGER ================= -->
-    <cfinclude template="logfile.cfm">
+    <cfinclude template="/CRM/views/logfile.cfm">
 
     <cfset structClear(session)>
 

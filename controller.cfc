@@ -493,89 +493,87 @@
     returntype="any"
     returnformat="json"
     output="false">
-    <cfset var customerService =
-        createObject("component", "components.customers")>
+
+    <!-- Remote Arguments -->
+    <cfargument name="action" required="false" default="">
+    <cfargument name="search" required="false" default="">
+    <cfargument name="page" required="false" default="1">
+    <cfargument name="pageSize" required="false" default="5">
+    <cfargument name="id" required="false" default="">
+    <cfargument name="name" required="false" default="">
+    <cfargument name="email" required="false" default="">
+    <cfargument name="phone" required="false" default="">
+
+    <cfset var customerService = createObject("component","components.customers")>
     <cfset var result = {}>
-    <!-- URL Defaults -->
-    <cfparam name="url.action" default="">
-    <cfparam name="url.search" default="">
-    <cfparam name="url.page" default="1">
-    <cfparam name="url.pageSize" default="5">
 
-    <!-- FORM Defaults -->
-    <cfparam name="form.action" default="">
-    <cfparam name="form.search" default="">
-    <cfparam name="form.page" default="1">
-    <cfparam name="form.pageSize" default="5">
+    <cfswitch expression="#arguments.action#">
 
-    <cfparam name="form.id" default="">
-    <cfparam name="form.name" default="">
-    <cfparam name="form.email" default="">
-    <cfparam name="form.phone" default="">
+        <!-- GET CUSTOMERS -->
+        <cfcase value="getCustomers">
 
-    <!-- Determine Action -->
-    <cfset var action = "">
-    <cfif len(trim(form.action))>
-        <cfset action = form.action>
-    <cfelse>
-        <cfset action = url.action>
-    </cfif>
-    <cfswitch expression="#action#">
-    <!-- GET CUSTOMERS -->
-    <cfcase value="getCustomers">
-    <cfset result =
-        customerService.getCustomers(
-            search   = structKeyExists(url,"search") ? url.search : "",
-            page     = structKeyExists(url,"page") ? val(url.page) : 1,
-            pageSize = structKeyExists(url,"pageSize") ? val(url.pageSize) : 5
-        )
-    >
-</cfcase>
-    
-    <!-- SAVE CUSTOMER -->
-    <cfcase value="saveCustomer">
-        <cfparam name="form.id" default="">
-        <cfset result =
-            customerService.saveCustomer(
-                id = form.id,
-                name = form.name,
-                email = form.email,
-                phone = form.phone
+            <cfset result = customerService.getCustomers(
+                search = arguments.search,
+                page = val(arguments.page),
+                pageSize = val(arguments.pageSize)
             )>
-    </cfcase>
 
-    <cfcase value="emailExists">
-    <cfset result =
-        customerService.emailExists(
-            email = url.email,
-            id = structKeyExists(url,"id") ? url.id : 0
-        )>
-</cfcase>
+        </cfcase>
 
-<!-- GET CUSTOMER -->
-<cfcase value="getCustomer">
-    <cfset result =
-        customerService.getCustomer(
-            id = url.id
-        )>
-</cfcase>
+        <!-- SAVE CUSTOMER -->
+        <cfcase value="saveCustomer">
 
-<!-- DELETE CUSTOMER -->
-<cfcase value="deleteCustomer">
-    <cfset result =
-        customerService.deleteCustomer(
-            id = url.id
-        )>
-</cfcase>
-    <!-- DEFAULT -->
-    <cfdefaultcase>
-        <cfset result = {
-            success = false,
-            message = "Unknown action"
-        }>
-    </cfdefaultcase>
-</cfswitch>
+            <cfset result = customerService.saveCustomer(
+                id = arguments.id,
+                name = arguments.name,
+                email = arguments.email,
+                phone = arguments.phone
+            )>
+
+        </cfcase>
+
+        <!-- EMAIL EXISTS -->
+        <cfcase value="emailExists">
+
+            <cfset result = customerService.emailExists(
+                email = arguments.email,
+                id = arguments.id
+            )>
+
+        </cfcase>
+
+        <!-- GET CUSTOMER -->
+        <cfcase value="getCustomer">
+
+            <cfset result = customerService.getCustomer(
+                id = arguments.id
+            )>
+
+        </cfcase>
+
+        <!-- DELETE CUSTOMER -->
+        <cfcase value="deleteCustomer">
+
+            <cfset result = customerService.deleteCustomer(
+                id = arguments.id
+            )>
+
+        </cfcase>
+
+        <!-- DEFAULT -->
+        <cfdefaultcase>
+
+            <cfset result = {
+                success = false,
+                message = "Unknown action"
+            }>
+
+        </cfdefaultcase>
+
+    </cfswitch>
+
     <cfreturn result>
+
 </cffunction>
 
     <!-- CUSTOMERS PDF -->
