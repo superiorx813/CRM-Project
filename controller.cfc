@@ -358,6 +358,11 @@
         <cfqueryparam
             value="#url.id#"
             cfsqltype="cf_sql_integer">
+            AND
+            username =
+        <cfqueryparam
+            value="#session.username#"
+            cfsqltype="cf_sql_varchar">
     </cfquery>
     <!-- STORE DATA -->
     <cfset data.getRequest = getRequest>
@@ -392,6 +397,12 @@
             <cfqueryparam
                 value="#form.request_id#"
                 cfsqltype="cf_sql_integer">
+                AND
+                username =
+        <cfqueryparam
+            value="#session.username#"
+            cfsqltype="cf_sql_varchar">
+
     </cfquery>
      <!-- ================= LOG DATA (IMPORTANT) ================= -->
     <cfset logData = {
@@ -430,6 +441,11 @@
         <cfqueryparam
             value="#url.id#"
             cfsqltype="cf_sql_integer">
+            AND
+            username =
+        <cfqueryparam
+            value="#session.username#"
+            cfsqltype="cf_sql_varchar">
     </cfquery>
     <!-- DELETE QUERY -->
     <cfquery datasource="#application.datasource#">
@@ -438,6 +454,11 @@
         <cfqueryparam
             value="#url.id#"
             cfsqltype="cf_sql_integer">
+            AND
+            username =
+        <cfqueryparam
+            value="#session.username#"
+            cfsqltype="cf_sql_varchar">
     </cfquery>
     <!-- RESET MYSQL VARIABLE -->
     <cfquery datasource="#application.datasource#">
@@ -449,7 +470,7 @@
         SET request_id = (@count := @count + 1)
         WHERE username =
         <cfqueryparam
-            value="#getInfo.username#"
+            value="#session.username#"
             cfsqltype="cf_sql_varchar">
         ORDER BY request_id ASC
     </cfquery>
@@ -575,6 +596,8 @@
     <cfreturn result>
 
 </cffunction>
+    
+    
 
     <!-- CUSTOMERS PDF -->
 <cffunction name="customerspdf"
